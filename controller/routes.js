@@ -4,7 +4,7 @@ const Brawlstar = require('../model/models')
 
 router.get('/', (req,res)=>{
     res.send('We are on routes!')
-})git
+})
 
 
 router.get('/api/brawler', (req,res)=>{
