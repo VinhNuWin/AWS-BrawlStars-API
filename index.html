@@ -4,16 +4,80 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Document</title>
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1044.0.min.js"></script>
+
+        <title>BrawlStats</title>
+        <script>
+            AWS.config.region = "us-west-2";
+            AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+                IdentityPoolId: "us-west-2:110254dc-6362-4d82-b1da-f11699e2bc49",
+            });
+            const lambda = new AWS.Lambda();
+            const myFunction = (name,attack,health,range,reload,speed)=>{
+                // const myHeaders = JSON.stringify({"Access-Control-Allow-Origin": "*", "Content-Type": "application/json"})
+                // myHeaders.append("Access-Control-Allow-Origin", "*");
+                const raw = JSON.stringify({"name":name,"attack":attack,"health":health,"range":range,"reload":reload,"speed":speed});
+                const params = {
+                    method: 'POST',
+                    mode: 'cors',
+                    headers: {
+                        'Content-type': 'application/json'
+                    },
+                    body: raw,
+                };
+                fetch("https://1pwpmi3ceg.execute-api.us-west-2.amazonaws.com/dev/brawler", params)
+                .then(response=>response.json())
+                .then(data=> console.log(data))
+                // .then(respond=>respond.text())
+                // .then(result=>alert(JSON.stringify(result).body))
+                // .catch(error => console.log('error', error));
+            };
+        </script>
     </head>
     <body>
-        <img src="assets/wp8221613.jpeg">
+        <br>    <!--<form action="/myform" method="GET"> -->
+        <form action="/brawler" method="POST" class="form">
+            <div align="Center">
+                <br> <label for="skill"><b>Add Attribute and Value</b></label> <br>
+                <li>
+                    <p>Name</p>
+                    <input name="name" id="name" type="text" value="">
+                </li>
+                <li>
+                    <p>Health</p>
+                <input name="health" id="health" type="text" value="">
+                </li>
+                 <li>
+                    <p>Damage</p>
+                <input name="attack" id="attack" type="text" value="">
+                </li>
+                <li>
+                    <p>Range</p>
+                    <input name="range" id="range" type="text" value="">
+                </li>
+                <li>
+                    <p>Reload</p>
+                <input name="reload" id="reload" type="text" value="">
+                </li>
+                 <li>
+                    <p>Speed</p>
+                <input name="speed" id="speed" type="text" value="">
+                </li>
+                <br>        
+                <button type="button" onclick="myFunction(document.getElementById('name').value,document.getElementById('health').value,document.getElementById('attack').value,document.getElementById('range').value,document.getElementById('reload').value,document.getElementById('speed').value)">Submit</button>
+        </form>
+        <!-- <script type="text/javascript" src="./main.js"></script> -->
+        </body>
+</html> 
+        
+    <!-- <body>
+        <img src="https://brawlers-api.s3.us-west-2.amazonaws.com/wp8221613.jpeg">
         <h1>Brawl Stars API</h1>
         <h1>Simple Site To Display Brawler Stats</h1>
-        <button>Click Me</button>
-        <input type="text">
-        <h2>Result: </h2>
-    
-        <script src='js/main.js'></script>
-    </body>
-</html>
+        <input type="text" name="" value="">
+        <button type="button" name="button">Get Stats</button>
+        <h2>Name: </h2>
+        <img src="" alt="">
+        <h3>Stats</h3>
+        <script type = "text/javascript" src="server.js"></script>
+    </body> -->

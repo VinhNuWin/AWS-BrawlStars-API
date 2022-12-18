@@ -1,0 +1,91 @@
+let frank = new Brawler('Frank', '10500','1860','6','.8s','Fast')
+
+let rico = new Brawler('Rico', '4200', '480 (5)', '9.67', '1.2 sec', '720')
+
+let darryl = new Brawler('Darryl', '7950', '360 (10)', '6', '1.8 sec', '770')
+
+let penny = new Brawler('Penny', '4480', '1410', '6', '2.0 sec', '720')
+
+let carl = new Brawler('Carl', '6000', '990', '8.33', '0.5 sec', '720')
+
+let gus = new Brawler('Gus', '4800', '1410', '9.33', '1.5 sec (Normal)', '720')
+
+let piper = new Brawler('Piper', '3600', '2280 (Max Distance)', '10 (Max Distance)', '2.3 sec', '720')
+
+let jacky = new Brawler('Jacky', '7500', '1860', '3.33', '1.8 sec (Normal)', '770 (Fast)')
+
+let pam = new Brawler('Pam', '7200', '390 (9)', '9', '1.3 sec (Very Fast)', '720 (Normal)')
+
+let bibi = new Brawler('Bibi', '6900', '2100', '3.67', '0.8 sec (Very Fast)', '820 (Very Fast)')
+
+let bea = new Brawler('Bea', '3600', '1200'/'3300 (Supercharged)', '10', '.9 sec', '720')
+
+let nani = new Brawler('Nani', '3900', '1050 (3)', '8.67','1.8 sec','720')
+
+let edgar = new Brawler('Edgar', '4200', '810 (2)', '2', '0.7 sec', '820 (Very Fast)')
+
+let griff = new Brawler('Griff', '5100', '390 (9)', '8.33', '1.7 sec', '720')
+
+let grom = new Brawler('Grom', '4500', '1740', '7.67', '2 sec (Slow)', '720')
+
+let bonnie = new Brawler('Bonnie', '7200', '870 (Bonnie)/1500 (Clyde)', '9', '1 second (Bonnie)/ 2 seconds (Clyde)', '720')
+
+let mortis = new Brawler('Mortis', '5700', '1350', '2.67', '2.4 sec', '820 (Very Fast)')
+
+let tara = new Brawler('Tara', '4800', '660 (3)', '8', '2 sec', '720')
+
+let gene = new Brawler('Gene', '5400', '1440 (240)', '5.67/11.33 (Max Range)', '2 sec', '720')
+
+let max = new Brawler('Max', '4800', '510 (4)', '8.33', '1.3 sec', '820')
+
+let mrp = new Brawler('Mr. P', '4500', '1140 (2)', '7 / 10 (after bounce)', '1.6 sec', '720')
+
+let sprout = new Brawler('Sprout', '4500', '1470', '5', '1.7 sec', '720')
+
+let byron = new Brawler('Byron', '3600', '510', '10', '1.6 sec', '720')
+
+let squeak = new Brawler('Squeak', '3360', '1620', '7.67', '2.1 sec', '720')
+
+let spike = new Brawler('Spike', '3600', '840 (6)', '7.67', '2 sec', '720')
+
+let crow = new Brawler('Crow', '3600', '480 (3)', '8.67', '1.4 sec', '820')
+
+let leon = new Brawler('Leon','4800','720(4) min. range / 288(4) max range','9.67','1.9 sec','820')
+
+let sandy = new Brawler('Sandy', '5700', '1290', '6', '1.8 sec', '770')
+
+let amber = new Brawler('Amber', '4800', '300 per sec', '8.33', '.22 sec', '720')
+
+let meg = new Brawler('Meg', '3450', '450 (2)', '9', '1.3 sec', '770')
+
+let gale = new Brawler('Gale', '5400', '420 (6)', '8.33', '1.4 sec', '720')
+
+let surge = new Brawler('Surge', '4200', '1770', '6.67 (Normal/ 8.67 (stage 2)', '2 sec', '650-820')
+
+let colette = new Brawler('Colette', '5100', '750-2250 max', '8.67', '1.6 sec', '720')
+
+let lou = new Brawler('Lou', '4800', '660 (3)', '9.33', '1.3 sec', '720')
+
+let ruffs = new Brawler('Ruffs', '4200', '840 (2)', '9', '1.4 sec', '720')
+
+let belle = new Brawler('Belle', '3900', '1560', '10', '1.4 sec', '720')
+
+let buzz = new Brawler('Buzz', '6600', '630 (5)', '2.67', '1 sec', '770')
+
+let ash = new Brawler('Ash', '8100', '1200', '4.67', '1.4 sec', '720-820')
+
+let colt = new Brawler('Colt', '4200', '540 (6)', '9 / 10 (Special)', '1.7 sec', '720-820')
+
+let dynamike = new Brawler('Mike', '4200', '1200 (2)', '7.33', '1.6 sec', '770')
+
+let sam = new Brawler('Sam', '8100', '1200 (2)', '3', '1.6 sec', '770-970')
+
+let buster = new Brawler('Buster', '7200', '2220(min. range) / 1110 (max range)', '5.33', '1.8 sec', '770-620 (active super)')
+
+let otis = new Brawler('Otis', '5100', '660 (3,4)', '9', '1.5 sec', '720')
+
+let barley = new Brawler('Barley', '3600', '1140 per second', '7.33', '2 sec', '720')
+
+let fang = new Brawler('Fang', '6450', '525 (shoe)/2100 (kick)', '3 (Short)/ 9 (Shoe)', '1 sec', '770')
+
+let poco = new Brawler('Poco', '6000', '1140', '7', '1.6 sec', '720')
